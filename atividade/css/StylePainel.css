@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#textClientes{
+    width: 20%;
+    height: 100vh;
+
+}
+ul{
+    list-style: none;
+    width: 100%;
+}
+li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 10px;
+}
+span{
+    padding-right: 10px;
+}
+
+main{
+    display: flex;
+}
+
+div#right{
+    width: 85%;
+    height: 90vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div > form#formpadrao{
+    border: 1px solid black;
+    width: 50%;
+    height: 60vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+div > form#formpadrao > section#clientesTopSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    width: 90%;
+    margin: 0 auto;
+    
+
+}
+
+h1#textClientes{
+    text-decoration: underline;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2rem;
+    width: 90%;
+    height: 10vh;
+    margin-top: 25px;
+}
+h1#xisinho{
+    width: 10%;
+    color: red;
+    height: 10vh;
+    cursor: pointer;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+div > form#formpadrao > input{
+    height: 10vh;
+    width: 90%;
+    margin-top: 6px;
+    margin-left: 25px;
+}
+
+div#left{
+    border-right: 3px solid black;
+    width: 17%;
+    height: 100vh;
+}
+div > form#formpadrao > input{
+    height: 6vh;
+    width: 90%;
+    margin-top: 6px;
+    margin-left: 25px;
+}
+div > form#formpadrao > input{
+    height: 6vh;
+    width: 90%;
+    margin-top: 6px;
+    margin-left: 25px;
+}
+div > form#formpadrao > input#quantidadeCli{
+    height: 6vh;
+    width: 90%;
+    margin-top: 6px;
+    margin-left: 25px;
+
+}
+form#formpadrao > nav#localizarProduto{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+form#formpadrao > nav#localizarProduto > input#idDoProduto{
+    margin-left: 2%;
+    width: 10%;
+    height: 5vh;
+}
+form#formpadrao > nav#localizarProduto > input#descProduto{
+    width: 25%;
+    height: 5vh;
+}
+form#formpadrao > nav#localizarProduto > input#precoUnidade{
+    width: 10%;
+    height: 5vh;
+}
+form#formpadrao > nav#localizarProduto > input#qntdProdutos{
+    width: 15%;
+    height: 5vh;
+}
+nav#localizarProduto > input#btnLancar{
+    width: 32%;
+    height: 5vh;
+}
+tr{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+table{
+    width: 100%;
+}
+th{
+    margin-bottom: 5%;
+}
+p{
+    margin-left: 10%;
+}
+#botoes{
+    width: 60%;
+    height: 10vh;
+    margin-top: 6px;
+}
+#frenteTras{
+    width: 50%;
+    height: 10vh;
+    margin-top: 75px;
+}
+#btnTras{
+    width: 40%;
+    height: 6vh;
+    background-color: purple;
+}
+#btnFrente{
+    width: 40%;
+    height: 6vh;
+    background-color: purple;
+}
+div > form#formpadrao > section#botoes > nav#novoSalvar{
+    width: 40%;
+    margin-top: 45px;
+}
+div > form#formpadrao > section#botoes > nav#novoSalvar > input{
+    width: 49%;
+    height: 7vh;
+    color: white;
+    border-radius: 10px;
+}
+div > form#formpadrao > section#botoes > nav#novoSalvar > input#btnSalvar{
+    background-color: green;
+}
+div > form#formpadrao > section#botoes > nav#novoSalvar > input#btnNovo{
+    background-color: rgb(0, 85, 255);
+}
+section#botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    width: 90%;
+    margin: 0 auto;
+    align-self: flex-end;
+}
+section#botoes > input{
+    border-radius: 10px;
+}
+legend{
+    margin-left: 25px;
+}
+section#totalPedido{
+    width: 10%;
+    height: 5vh;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 100%;
+}
+.flex{
+    display: flex;
+}
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #616161;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+header > h1#logo{
+    font-size: 3rem;
+    font-family:'Oleo Script Swash Caps', cursive;
+    margin-left: 10px;
+    text-shadow: 0 0 8px #ffba62;
+    cursor: pointer;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ Menu de navegação que fica no lado esquerdo 
+main > nav#navleft{
+    background-color: #616161;
+    width: 20%;
+    height: 90vh;
+    border-right: 2vh solid black;
+    border-top: 2vh solid black;
+}
+ul{
+    width: 100%;
+    list-style: none;
+}
+li{
+    display: flex;
+    cursor: pointer;
+    font-size: 1.4rem;  
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    color: white;
+}
+li:hover{
+    border-bottom: 2px solid black;
+}
+.left{
+    padding-right:15px
+}
+/* div principal em que ficam os forms
+div{
+    width: 85%;
+    height: 90vh;
+    background-color: #616161;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2vh solid black;
+}
+div > form#formpadrao{
+    border: 1px solid black;
+    width: 50%;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+div > form#formpadrao > section#clientesTopSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+h1#textClientes{
+    text-decoration: underline;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2rem;
+    width: 90%;
+    height: 10vh;
+}
+h1#xisinho{
+    width: 10%;
+    color: red;
+    height: 10vh;
+    cursor: pointer;
+    align-items: center;
+    justify-content: flex-end;
+}
+div > form#formpadrao > input{
+    height: 7vh;
+    width: 90%;
+    margin-left:5%;
+}
+
+legend{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+/*Section usada para clientes e produtos
+div > form#formpadrao > section#botoes{
+
+    width: 96%;
+    height: 7vh;
+    margin-top: 10%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10%;
+}
+div > form#formpadrao > section#botoes > nav#frenteTras{
+    width: 40%;
+}
+div > form#formpadrao > section#botoes > nav#frenteTras > input#btnFrente, input#btnTras{
+    width: 49%;
+    background-color: purple;
+    height: 7vh;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+}
+div > form#formpadrao > section#botoes > nav#novoSalvar{
+    width: 40%;
+}
+div > form#formpadrao > section#botoes > nav#novoSalvar > input{
+    width: 49%;
+    height: 7vh;
+    color: white;
+    border-radius: 10px;
+}
+div > form#formpadrao > section#botoes > nav#novoSalvar > input#btnSalvar{
+    background-color: green;
+}
+div > form#formpadrao > section#botoes > nav#novoSalvar > input#btnNovo{
+    background-color: rgb(0, 85, 255);
+}
+/* Produtos 
+nav#localizarProduto{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+nav#localizarProduto > input#idDoProduto{
+    margin-left: 2%;
+    width: 10%;
+    height: 5vh;
+}
+nav#localizarProduto > input#descProduto{
+    width: 25%;
+    height: 5vh;
+}
+nav#localizarProduto > input#precoUnidade{
+    width: 10%;
+    height: 5vh;
+}
+nav#localizarProduto > input#qntdProdutos{
+    width: 15%;
+    height: 5vh;
+}
+nav#localizarProduto > input#btnLancar{
+    width: 32%;
+    height: 5vh;
+}
+tr{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+table{
+    width: 100%;
+}
+th{
+    margin-bottom: 5%;
+}
+p{
+    margin-left: 10%;
+}
+section#totalPedido{
+    width: 10%;
+    height: 5vh;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+form > input{
+    background-color: white;
+}
+nav#localizarProduto > input#descProduto, input#precoUnidade{
+    background-color: white;   
+}
+input{
+    border: .3px solid black;  
+}
+#btnLancar{
+    margin-right: 2%;
+} */
